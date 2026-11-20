@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090b0a">
+<meta name="description" content="سجّل في نظام AK12 — 7 أسئلة فقط (أقل من دقيقة) لتُبنى خطتك على بياناتك.">
+<title>سجّل الآن | AK12 — 7 أسئلة وتبدأ رحلتك</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* join.html — scoped, theme-aware (uses style.css tokens) */
+  main { padding-top: clamp(84px, 12vh, 132px); }
+  .j-hero { text-align: center; padding-bottom: clamp(20px, 4vw, 40px); }
+  .j-hero .eyebrow { color: var(--lime); border-color: rgb(197 250 68 / 35%); }
+  .j-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 7vw, 62px);
+    font-weight: 800; line-height: 1.14; letter-spacing: -.5px;
+    color: var(--white); margin: 18px 0 0;
+  }
+  .j-hero h1 .accent { color: var(--lime); }
+  .j-hero p.lead {
+    color: var(--muted); font-size: clamp(15px, 2vw, 18px);
+    max-width: 58ch; margin: 16px auto 0;
+  }
+  .j-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+  .j-trust { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 22px; }
+  .j-trust span {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13.5px; font-weight: 600; color: var(--white);
+    background: rgb(255 255 255 / 4%);
+    border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px;
+  }
+  .j-trust b { color: var(--lime); }
+
+  .j-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 10px; }
+  @media (max-width: 780px) { .j-steps { grid-template-columns: 1fr; } }
+  .j-step {
+    background: var(--surface-raised); border: 1px solid var(--line);
+    border-radius: 8px; padding: 24px; transition: transform .2s var(--ease-out), border-color .2s ease;
+  }
+  .j-step:hover { transform: translateY(-3px); border-color: rgb(197 250 68 / 45%); }
+  .j-step .n {
+    font-family: var(--font-display); font-weight: 800; font-size: 30px;
+    color: var(--lime); line-height: 1;
+  }
+  .j-step h3 { color: var(--white); font-size: 18px; margin: 12px 0 8px; font-family: var(--font-display); }
+  .j-step p { color: var(--muted); font-size: 14.5px; margin: 0; }
+  .j-cta { text-align: center; padding: clamp(30px, 5vw, 56px) 0 10px; }
+  .j-cta .button { min-width: 240px; }
+  .j-note { text-align: center; color: var(--muted); font-size: 12.5px; margin-top: 16px; }
+  .j-note a { color: var(--lime); }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner container">
+      <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="القائمة الرئيسية">
+        <a class="nav-link" href="index.html#home">الرئيسية</a>
+        <a class="nav-link" href="index.html#ak12">نظام AK12</a>
+        <a class="nav-link" href="index.html#programs">البرامج</a>
+        <a class="nav-link" href="index.html#pricing">الأسعار</a>
+        <a class="nav-link" href="index.html#contact">تواصل</a>
+        <a class="button button-small nav-join" href="embed.html">ابدأ التسجيل <span aria-hidden="true">↗</span></a>
+      </nav>
+      <a class="brand" href="index.html" aria-label="AK12 — الرئيسية">
+        <img src="./img/s-blob-v1-IMAGE-KIykUH82Aa0-font.svg" alt="شعار آيرونكور للياقة">
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="section">
+      <div class="container j-hero">
+        <p class="eyebrow"><span class="eyebrow-line"></span> 7 أسئلة · أقل من دقيقة</p>
+        <h1>سجّل في <span class="accent">AK12.</span><br>ابدأ رحلتك الآن.</h1>
+        <p class="lead">كل سؤال يقرّبنا من خطة مبنية على بياناتك أنت — مش نسخة جاهزة. كن صادقًا، الصح أهم من الكمال.</p>
+        <div class="j-actions">
+          <a class="button" href="embed.html">املأ الاستمارة الآن <span aria-hidden="true">←</span></a>
+          <a class="button button-outline" href="https://wa.me/963935141576?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A3%D9%86%D9%85%D8%A7%D8%B1%D8%8C%20%D8%A8%D8%AF%D9%8A%20%D8%A3%D8%B3%D8%AC%D9%91%D9%84%20%D8%A8%D9%86%D8%B8%D8%A7%D9%85%20AK12" target="_blank" rel="noopener">💬 تواصل عبر واتساب</a>
+        </div>
+        <div class="j-trust">
+          <span><b>⏱</b> أقل من دقيقة</span>
+          <span><b>🔒</b> بياناتك تبقى مع المدرب</span>
+          <span><b>💬</b> متابعة عبر واتساب</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Steps -->
+    <section class="section section-border">
+      <div class="container">
+        <div class="j-steps">
+          <div class="j-step">
+            <div class="n">01</div>
+            <h3>رسالة على واتساب</h3>
+            <p>راسلني بكلمة «AK12» — برد عليك خلال 24 ساعة بسؤالين سريعين نتأكد إنن النظام مناسب إلك.</p>
+          </div>
+          <div class="j-step">
+            <div class="n">02</div>
+            <h3>املأ الاستمارة</h3>
+            <p>7 أسئلة فقط: قياسات البداية، هدفك، مستواك، حالتك الصحية، وقيودك الغذائية — دقيقة وتخلص.</p>
+          </div>
+          <div class="j-step">
+            <div class="n">03</div>
+            <h3>استلم خطتك</h3>
+            <p>خلال 48 ساعة بتستلم خطتك الكاملة: تدريب، تغذية، كارديو، مكملات — وأول Check-in الأحد الجاي.</p>
+          </div>
+        </div>
+
+        <div class="j-cta">
+          <a class="button" href="embed.html">جاهز؟ ابدأ الاستمارة <span aria-hidden="true">←</span></a>
+          <p class="j-note">النظام الكامل 150$ · 12 أسبوع · <a href="index.html#pricing">التفاصيل والأسعار</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center">
+      <p style="color:var(--muted);font-size:13px">© <span class="year">2026</span> أنمار الخطيب — AK12</p>
+      <div style="display:flex;gap:18px">
+        <a href="index.html">الرئيسية</a>
+        <a href="embed.html">التسجيل</a>
+        <a href="https://wa.me/963935141576" target="_blank" rel="noopener">واتساب</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // minimal, null-safe nav toggle (mirrors script.js behaviour)
+    (function () {
+      var toggle = document.querySelector('.menu-toggle');
+      var nav = document.querySelector('.site-nav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'إغلاق القائمة' : 'فتح القائمة');
+        nav.classList.toggle('is-open', open);
+        document.body.classList.toggle('menu-open', open);
+      }
+      toggle.addEventListener('click', function () {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () { setOpen(false); });
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          setOpen(false); toggle.focus();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

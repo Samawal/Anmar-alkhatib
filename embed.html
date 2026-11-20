@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090b0a">
+<meta name="description" content="استمارة تسجيل AK12 — نموذج Google مدمج. 7 أسئلة فقط (أقل من دقيقة).">
+<title>استمارة التسجيل | AK12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  main { padding-top: clamp(84px, 12vh, 132px); }
+  .e-head { text-align: center; margin-bottom: clamp(18px, 3vw, 30px); }
+  .e-head .eyebrow { color: var(--lime); border-color: rgb(197 250 68 / 35%); }
+  .e-head h1 {
+    font-family: var(--font-display); font-weight: 800;
+    font-size: clamp(26px, 5vw, 44px); line-height: 1.2; letter-spacing: -.4px;
+    color: var(--white); margin: 14px 0 0;
+  }
+  .e-head h1 .accent { color: var(--lime); }
+  .e-head p { color: var(--muted); margin-top: 10px; }
+
+  .e-frame {
+    background: var(--surface-raised); border: 1px solid var(--line);
+    border-radius: 10px; overflow: hidden; box-shadow: 0 30px 70px -30px rgb(0 0 0 / 60%);
+  }
+  .e-bar {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 12px 16px; border-bottom: 1px solid var(--line);
+  }
+  .e-bar .dots { display: flex; gap: 7px; }
+  .e-bar .dots i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+  .e-bar .dots i:first-child { background: var(--lime); }
+  .e-bar .url {
+    flex: 1; min-width: 0; height: 30px; border-radius: 999px; background: var(--surface);
+    border: 1px solid var(--line); display: flex; align-items: center;
+    padding: 0 14px; font-size: 12px; color: var(--muted); white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+  }
+  .e-bar .open {
+    font-family: var(--font-display); font-weight: 600; font-size: 12.5px;
+    color: var(--white); text-decoration: none; border: 1px solid var(--line);
+    border-radius: 999px; padding: 7px 14px; white-space: nowrap;
+    transition: all .18s ease;
+  }
+  .e-bar .open:hover { border-color: var(--lime); color: var(--lime); }
+
+  .e-canvas { background: #fff; }
+  .e-canvas iframe { display: block; width: 100%; height: 1250px; border: none; background: #fff; }
+  @media (max-width: 560px) { .e-canvas iframe { height: 1600px; } .e-bar .url { display: none; } }
+
+  .e-foot { text-align: center; color: var(--muted); font-size: 12.5px; margin-top: 18px; }
+  .e-foot a { color: var(--lime); text-decoration: none; }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner container">
+      <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="القائمة الرئيسية">
+        <a class="nav-link" href="index.html#home">الرئيسية</a>
+        <a class="nav-link" href="index.html#ak12">نظام AK12</a>
+        <a class="nav-link" href="index.html#programs">البرامج</a>
+        <a class="nav-link" href="index.html#pricing">الأسعار</a>
+        <a class="nav-link" href="join.html">التسجيل</a>
+        <a class="button button-small nav-join" href="https://wa.me/963935141576" target="_blank" rel="noopener">واتساب <span aria-hidden="true">↗</span></a>
+      </nav>
+      <a class="brand" href="index.html" aria-label="AK12 — الرئيسية">
+        <img src="./img/s-blob-v1-IMAGE-KIykUH82Aa0-font.svg" alt="شعار آيرونكور للياقة">
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="e-head container">
+      <p class="eyebrow"><span class="eyebrow-line"></span> Google Form · مدمج</p>
+      <h1>خلّينا نبدأ <span class="accent">رحلتك.</span></h1>
+      <p>نموذج Google حقيقي — إجاباتك تُجمع في Google Sheet مباشرة. كن صادقًا، الصح أهم من الكمال.</p>
+    </div>
+
+    <!-- ضع رابط Google Form هنا (مع ‎?embedded=true لإخفاء شعار Google) -->
+    <div class="container">
+      <div class="e-frame">
+        <div class="e-bar">
+          <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="url" id="frameUrl">docs.google.com/forms/d/e/…/viewform</div>
+          <a class="open" id="openLink" href="https://docs.google.com/forms/d/e/1FAIpQLSerQUHgLt-gvjXwr13gbWIQeCwJwDxkEOJ-FetA9AC8nhteag/viewform" target="_blank" rel="noopener">فتح ↗</a>
+        </div>
+        <div class="e-canvas">
+          <iframe
+            id="ak12FormFrame"
+            title="AK12 — استمارة التسجيل (Google Form)"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSerQUHgLt-gvjXwr13gbWIQeCwJwDxkEOJ-FetA9AC8nhteag/viewform?embedded=true"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allow="clipboard-write; fullscreen">
+          </iframe>
+        </div>
+      </div>
+      <p class="e-foot">البيانات تُجمع بأمان في Google Sheet · <a href="join.html">رجوع للتسجيل</a> · <a href="index.html">الرئيسية</a></p>
+    </div>
+  </main>
+
+  <script>
+    // null-safe nav toggle
+    (function () {
+      var toggle = document.querySelector('.menu-toggle');
+      var nav = document.querySelector('.site-nav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'إغلاق القائمة' : 'فتح القائمة');
+        nav.classList.toggle('is-open', open);
+        document.body.classList.toggle('menu-open', open);
+      }
+      toggle.addEventListener('click', function () { setOpen(toggle.getAttribute('aria-expanded') !== 'true'); });
+      nav.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') { setOpen(false); toggle.focus(); }
+      });
+    })();
+  </script>
+</body>
+</html>
